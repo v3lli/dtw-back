@@ -9,6 +9,6 @@ router
     .patch(albumController.updatealbum)
     .delete(albumController.deletealbum);
 
-module.exports =  router
+module.exports = router
 
     

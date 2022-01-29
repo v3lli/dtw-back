@@ -12,3 +12,5 @@ const albumRouter = require('./routes/albumroutes');
 
 
 app.use('/api/v1/albums', albumRouter);
+
+module.exports = app

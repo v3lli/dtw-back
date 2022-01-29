@@ -1,19 +1,16 @@
-const  Mongoose  = require("mongoose");
+const mongoose = require('mongoose');
 
-const albumSchema = new Mongoose.Schema({
+const albumSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, 'an album must have a name'],
         unique: true
     },
     description: {
         type: String,
-        required: [true, 'an album must have a description'],
         unique: true
     },
     cover: {
         type: String,
-        required: [true, 'an album must have an album cover'],
         unique: true
     },
     year: {
@@ -22,8 +19,8 @@ const albumSchema = new Mongoose.Schema({
     type:{
         type: String
     }
-})
+});
 
-const album = Mongoose.model('album', albumSchema);
+const album = mongoose.model('album', albumSchema);
 
-module.exports =  album
+module.exports = album
